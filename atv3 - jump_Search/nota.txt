@@ -1,0 +1,23 @@
+Algoritmo: Jump Search
+
+Descrição:
+O algoritmo Jump Search é um método de busca em listas ordenadas que tenta melhorar a eficiência da busca linear. Ele funciona "pulando" para frente em intervalos fixos (o "salto") e realizando uma busca linear após encontrar um intervalo onde o valor procurado pode estar.
+
+Passos:
+1. Inicialize um salto de tamanho sqrt(n), onde n é o número de elementos na lista.
+2. Compare o elemento do intervalo atual com o valor procurado.
+3. Se o valor procurado for maior que o valor do intervalo, avance para o próximo salto.
+4. Caso contrário, realize uma busca linear dentro do intervalo identificado.
+5. O algoritmo retorna o índice do elemento encontrado ou -1 se o elemento não estiver presente.
+
+Complexidade:
+- Melhor caso: O(log n)
+- Pior caso: O(√n)
+
+Exemplo:
+Lista ordenada: [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21]
+Valor procurado: 15
+Resultado esperado: 7 (índice do valor 15 na lista)
+
+Comparação com o Binary Search:
+- O Binary Search realiza a busca pela divisão contínua da lista (log(n) passos), enquanto o Jump Search "salta" por intervalos e pode ser mais eficiente em listas grandes com muitos elementos.

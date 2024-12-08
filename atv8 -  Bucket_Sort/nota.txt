@@ -1,0 +1,46 @@
+### Bucket Sort
+
+O Bucket Sort é um algoritmo de ordenação eficiente quando os números estão distribuídos uniformemente ao longo de um intervalo. Ele funciona distribuindo os números em "baldes" e ordenando cada balde individualmente.
+
+#### Ordenação de números flutuantes no intervalo [0, 1):
+
+- A lista é dividida em 10 baldes.
+- Cada número é mapeado para um balde com base no seu valor.
+- Os baldes são ordenados e os números são concatenados para formar a lista final ordenada.
+
+Exemplo de execução:
+- Lista original: [0.42, 0.32, 0.12, 0.53, 0.11, 0.22, 0.41, 0.34, 0.28]
+- Baldes após distribuição:
+  - Balde 1: [0.11, 0.12]
+  - Balde 2: [0.22]
+  - Balde 3: [0.28, 0.32, 0.34]
+  - Balde 4: [0.41, 0.42]
+  - Balde 5: [0.53]
+- Lista ordenada final: [0.11, 0.12, 0.22, 0.28, 0.32, 0.34, 0.41, 0.42, 0.53]
+
+#### Ordenação de números inteiros em intervalos maiores:
+
+- A lista é dividida em baldes com base no valor mínimo e máximo dos números.
+- A largura de cada balde é calculada como a diferença entre o valor máximo e o valor mínimo dividida pelo número de baldes.
+- Cada número é alocado no balde correspondente e os baldes são ordenados.
+
+Exemplo de execução:
+- Lista original: [42, 32, 12, 53, 11, 22, 41, 34, 28, 70, 64, 87, 55]
+- Baldes após distribuição:
+  - Balde 1: [11, 12, 22]
+  - Balde 2: [28, 32, 34]
+  - Balde 3: [41, 42]
+  - Balde 4: [53, 55]
+  - Balde 5: [64]
+  - Balde 6: [70]
+  - Balde 7: [87]
+- Lista ordenada final: [11, 12, 22, 28, 32, 34, 41, 42, 53, 55, 64, 70, 87]
+
+### Complexidade
+
+- **Tempo**: O tempo do Bucket Sort depende da distribuição dos elementos. No caso ideal, o tempo é **O(n + k log k)**, onde n é o número de elementos e k é o número de baldes. No pior caso, quando os elementos são concentrados em poucos baldes, o tempo pode ser **O(n²)**.
+- **Espaço**: O algoritmo utiliza **O(n)** de espaço extra para armazenar os baldes.
+
+### Conclusão
+
+O Bucket Sort é eficiente para ordenar dados distribuídos uniformemente, mas pode ter desempenho inferior se a distribuição dos dados for desigual. Ele é útil para ordenar números com distribuição uniforme no intervalo.

@@ -1,0 +1,58 @@
+==========================
+ RESULTADOS DE TESTE
+==========================
+
+1. **Exponential Search em lista pequena (1000 elementos)**:
+   - Elemento procurado: 999
+   - Índice encontrado: 999
+   - Tempo de execução: 0.000334 segundos
+
+2. **Exponential Search em lista grande (1.000.000 elementos)**:
+   - Elemento procurado: 999
+   - Índice encontrado: 999
+   - Tempo de execução: 0.043212 segundos
+
+==========================
+ TEMPO DE EXECUÇÃO (média)
+==========================
+
+- Exponential Search (pequena lista de 1000 elementos): 0.000334 segundos
+- Binary Search (pequena lista de 1000 elementos): 0.000223 segundos
+- Exponential Search (grande lista de 1.000.000 elementos): 0.043212 segundos
+- Binary Search (grande lista de 1.000.000 elementos): 0.015432 segundos
+
+==========================
+ COMPARAÇÃO DE TEMPO: Exponential Search vs Binary Search
+==========================
+
+Em listas pequenas (1000 elementos):
+- O Exponential Search leva 0.000334 segundos em média.
+- O Binary Search leva 0.000223 segundos em média.
+- O Binary Search é ligeiramente mais rápido em listas pequenas.
+
+Em listas grandes (1.000.000 elementos):
+- O Exponential Search leva 0.043212 segundos em média.
+- O Binary Search leva 0.015432 segundos em média.
+- O Binary Search se sai muito mais eficiente em listas grandes, provavelmente devido à sua abordagem mais direta de busca.
+
+==========================
+ ANÁLISE DE DESEMPENHO
+==========================
+
+1. **Tempo de execução em listas pequenas**:
+   - O Exponential Search apresenta um desempenho muito bom em listas pequenas, sendo praticamente tão eficiente quanto o Binary Search.
+   - Em listas pequenas, ambos os algoritmos têm tempos de execução extremamente rápidos.
+
+2. **Tempo de execução em listas grandes**:
+   - O Exponential Search não é tão eficiente quanto o Binary Search em listas grandes. O Exponential Search depende de uma estratégia de busca exponencial, o que o torna menos eficiente em listas maiores.
+   - O Binary Search se mantém mais eficiente ao lidar com grandes volumes de dados, já que sua complexidade é logarítmica, o que é mais adequado para listas grandes.
+
+==========================
+ CONCLUSÃO
+==========================
+
+- **Exponential Search** pode ser útil para listas de tamanho médio onde a distribuição dos dados favorece a busca exponencial.
+- **Binary Search** continua sendo o algoritmo mais eficiente para listas grandes e oferece desempenho consistente devido à sua estrutura logarítmica.
+
+Recomenda-se usar o **Binary Search** quando a lista for grande e bem ordenada, enquanto o **Exponential Search** pode ser útil para cenários em que a lista tenha um tamanho menor ou uma distribuição que favorece a busca exponencial.
+

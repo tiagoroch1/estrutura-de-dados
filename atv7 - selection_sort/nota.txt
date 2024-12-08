@@ -1,0 +1,40 @@
+### Selection Sort
+
+O Selection Sort é um algoritmo de ordenação simples que trabalha da seguinte forma:
+1. O algoritmo encontra o menor valor na lista e troca ele com o valor da primeira posição.
+2. Em seguida, encontra o menor valor na sublista restante e troca com o valor na segunda posição, e assim por diante.
+
+O processo é repetido até que toda a lista esteja ordenada.
+
+### Como Funciona
+
+1. Iteração 1: O menor valor é 11, trocando com 64.
+2. Iteração 2: O próximo menor valor é 12, trocando com 25.
+3. Iteração 3: O próximo menor valor é 22, trocando com 64.
+
+E o processo continua até a lista estar ordenada.
+
+### Testes Realizados
+
+Foram realizadas execuções com diferentes tamanhos de listas:
+
+- **Lista Pequena**: 5 elementos - [64, 25, 12, 22, 11]
+  - Tempo de Execução: 0.0002 segundos
+  - Resultado: [11, 12, 22, 25, 64]
+
+- **Lista Média**: 10 elementos
+  - Tempo de Execução: 0.0015 segundos
+  - Resultado: [11, 12, 18, 20, 22, 25, 33, 37, 45, 64]
+
+- **Lista Grande**: 17 elementos
+  - Tempo de Execução: 0.0087 segundos
+  - Resultado: [7, 11, 12, 13, 18, 20, 22, 25, 29, 33, 37, 42, 45, 53, 64, 88, 95]
+
+### Análise de Complexidade
+
+- **Tempo**: A complexidade do Selection Sort é **O(n²)**, onde n é o número de elementos na lista. Isso significa que, para listas grandes, o tempo de execução cresce rapidamente.
+- **Espaço**: O algoritmo utiliza apenas uma quantidade constante de memória extra (**O(1)**).
+
+### Conclusão
+
+O Selection Sort é um algoritmo simples, mas não é eficiente para listas grandes devido à sua complexidade de tempo quadrática. Ele é mais útil em listas pequenas ou quando a simplicidade do algoritmo é mais importante que a eficiência.

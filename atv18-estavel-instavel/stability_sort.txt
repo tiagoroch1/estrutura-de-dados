@@ -1,0 +1,36 @@
+### Resultados da Atividade 18 - Estabilidade dos Algoritmos de Ordenação
+
+#### Algoritmos Estáveis
+- **Exemplo Utilizado:** Merge Sort
+- **Resultado da Ordenação Estável:**
+  Entrada: [("A", 3), ("B", 2), ("C", 3), ("D", 2), ("E", 1)]
+  Saída: [("E", 1), ("B", 2), ("D", 2), ("A", 3), ("C", 3)]
+- **Observação:** A ordem relativa dos elementos com valores iguais foi mantida.
+
+#### Algoritmos Instáveis
+- **Exemplo Utilizado:** Selection Sort
+- **Resultado da Ordenação Instável:**
+  Entrada: [("A", 3), ("B", 2), ("C", 3), ("D", 2), ("E", 1)]
+  Saída: [("E", 1), ("D", 2), ("B", 2), ("C", 3), ("A", 3)]
+- **Observação:** A ordem relativa dos elementos com valores iguais foi alterada.
+
+---
+
+### O que é Estabilidade em Algoritmos de Ordenação?
+
+**Definição:**  
+Um algoritmo de ordenação é considerado **estável** quando a ordem relativa de elementos iguais no array original é preservada na saída. Em contrapartida, um algoritmo **instável** não garante essa propriedade.
+
+---
+
+### Exemplos de Algoritmos
+
+1. **Algoritmos Estáveis:**
+   - Bubble Sort
+   - Merge Sort
+   - Insertion Sort
+
+2. **Algoritmos Instáveis:**
+   - Selection Sort
+   - Quick Sort (padrão)
+   - Heap Sort

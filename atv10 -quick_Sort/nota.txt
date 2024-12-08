@@ -1,0 +1,38 @@
+# Quick Sort com diferentes critérios de pivô
+
+## Objetivo:
+Implementar o algoritmo Quick Sort com três diferentes critérios para escolha do pivô:
+1. Primeiro elemento
+2. Último elemento
+3. Elemento do meio
+
+### Descrição do algoritmo:
+O algoritmo Quick Sort é um algoritmo de ordenação baseado no conceito de "dividir e conquistar". Ele seleciona um pivô a partir de um conjunto de elementos, e depois reorganiza os elementos da lista, de forma que todos os elementos menores que o pivô fiquem à sua esquerda e todos os elementos maiores fiquem à sua direita. Após a reorganização, o algoritmo aplica a mesma lógica recursivamente nas duas sublistas (à esquerda e à direita do pivô).
+
+### Critérios de escolha do pivô:
+- **Primeiro elemento**: O pivô é o primeiro elemento da lista.
+- **Último elemento**: O pivô é o último elemento da lista.
+- **Elemento do meio**: O pivô é o elemento localizado no meio da lista (geralmente, `len(lista) // 2`).
+
+### Análise de desempenho:
+O desempenho do Quick Sort pode variar de acordo com o critério escolhido para o pivô. Em listas quase ordenadas, escolher o primeiro ou o último elemento como pivô pode resultar em um desempenho mais lento, pois pode ocorrer um desbalanceamento nas sublistas. Por outro lado, ao escolher o pivô do meio, o algoritmo tende a ser mais eficiente para listas parcialmente ordenadas, pois divide melhor a lista em duas partes aproximadamente iguais.
+
+#### Exemplos de entradas e saídas:
+
+**Lista desordenada**:
+Input: [12, 3, 5, 7, 19, 1, 10, 9, 2]
+Output (ordenado): [1, 2, 3, 5, 7, 9, 10, 12, 19]
+
+**Lista quase ordenada**:
+Input: [1, 2, 3, 5, 7, 10, 9, 12, 19]
+Output (ordenado): [1, 2, 3, 5, 7, 9, 10, 12, 19]
+
+### Tempo de execução:
+O tempo de execução do algoritmo depende do tamanho da lista e do critério de escolha do pivô. Para listas pequenas, o algoritmo pode ser muito rápido, resultando em tempos muito baixos (em torno de milissegundos). Para listas grandes, o tempo de execução pode aumentar consideravelmente, especialmente quando o critério de pivô não divide a lista de forma equilibrada.
+
+#### Resultados de teste:
+- Para listas desordenadas e quase ordenadas, medimos o tempo de execução utilizando os três critérios de pivô. O tempo de execução foi observado para cada critério e comparado em listas de diferentes tamanhos.
+
+#### Observações:
+- O uso de `time.perf_counter()` proporciona maior precisão nas medições de tempo, especialmente para listas pequenas onde as diferenças de tempo são mais sutis.
+- A escolha do pivô influencia diretamente o número de comparações e a performance do algoritmo.

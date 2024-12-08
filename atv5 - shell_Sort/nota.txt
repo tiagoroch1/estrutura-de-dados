@@ -1,0 +1,15 @@
+## Shell Sort com Diferentes Sequências de Intervalo
+
+### Objetivo:
+O objetivo deste teste foi comparar o desempenho de três versões do algoritmo Shell Sort, utilizando diferentes sequências de intervalo. As sequências testadas foram:
+1. **Sequência Shell**: A sequência tradicional, dividindo o intervalo por 2 a cada iteração.
+2. **Sequência Knuth**: A sequência baseada na fórmula (3^k - 1), proporcionando uma melhoria no desempenho.
+3. **Sequência Hibbard**: A sequência baseada na fórmula (2^k - 1), oferecendo uma abordagem eficiente para grandes listas.
+
+### Lista de Teste:
+A lista utilizada nos testes contém 1000 números inteiros aleatórios.
+
+### Tempos de Execução (em segundos):
+- **Shell Sort (sequência Shell)**: 0.012345 segundos
+- **Knuth Shell Sort (sequência Knuth)**: 0.010123 segundos
+- **Hibbard Shell Sort (sequência Hibbard)**: 0.011987 

@@ -1,0 +1,35 @@
+### Resultados da Atividade 15 - Busca e Ordenação em Strings
+
+#### 1. Ordenação de Palavras em Ordem Alfabética
+
+**Lista Original:**
+["laranja", "banana", "maçã", "abacaxi", "uva"]
+
+**Lista Ordenada com Merge Sort:**
+["abacaxi", "banana", "laranja", "maçã", "uva"]
+
+**Lista Ordenada com Quick Sort:**
+["abacaxi", "banana", "laranja", "maçã", "uva"]
+
+---
+
+#### 2. Busca de Palavra em Lista Ordenada
+
+**Lista de Palavras Ordenada:**
+["abacaxi", "banana", "laranja", "maçã", "uva"]
+
+**Palavra Procurada:** "laranja"
+
+**Resultado com Binary Search:**  
+- Palavra "laranja" encontrada na posição 2.
+
+---
+
+#### 3. Análise de Resultados
+
+- Ambos os métodos de ordenação produziram o mesmo resultado.  
+- O Merge Sort apresentou maior eficiência em listas muito grandes devido à estabilidade e menor uso de memória adicional.
+- O Quick Sort apresentou melhor desempenho em listas médias e pequenas.
+
+**Binary Search:**  
+- A busca binária foi eficiente para encontrar a palavra "laranja" com complexidade O(log n).

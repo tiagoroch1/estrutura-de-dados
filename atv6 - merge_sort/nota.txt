@@ -1,0 +1,10 @@
+
+# Explicação do Algoritmo Merge Sort - Dividir para Conquistar
+## Dividir para Conquistar:
+
+O algoritmo Merge Sort segue a estratégia de "dividir para conquistar", que consiste em dois passos principais:
+
+1. **Dividir**:
+   O algoritmo divide a lista em duas metades recursivamente até que cada sublista tenha apenas um elemento. Esse é o processo de "divisão". Ao dividir uma lista de n elementos, o número de divisões necessárias é log(n), o que torna o processo eficiente para listas grandes.
+
+   Por exemplo, se tivermos a lista `[38, 27, 43, 3, 9, 82, 10]`, o algoritmo primeiro divide a lista em duas partes:

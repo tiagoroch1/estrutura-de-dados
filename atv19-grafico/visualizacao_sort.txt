@@ -1,0 +1,22 @@
+### Atividade 19 - Análise Visual dos Algoritmos de Ordenação
+
+#### Algoritmos Visualizados:
+
+1. **Merge Sort**:
+   - O Merge Sort divide recursivamente a lista em sublistas menores até que cada sublista tenha um único elemento. Depois, começa a combinar essas sublistas de forma ordenada.
+   - A visualização mostra os estados da lista após cada merge (combinação de sublistas).
+
+2. **Quick Sort**:
+   - O Quick Sort escolhe um pivô e particiona a lista em torno dele, com elementos menores que o pivô à esquerda e maiores à direita. Depois, recursivamente ordena as sublistas.
+   - A visualização mostra o estado da lista após cada partição.
+
+3. **Selection Sort**:
+   - O Selection Sort encontra o menor elemento na parte não ordenada da lista e o coloca na posição correta. Isso é repetido até que toda a lista esteja ordenada.
+   - A visualização mostra a troca dos elementos a cada iteração.
+
+---
+
+### Conclusões:
+
+- **Merge Sort** e **Quick Sort** são muito mais eficientes visualmente, realizando poucas trocas, enquanto o **Selection Sort** realiza muitas trocas e é mais lento.
+- A visualização facilita entender como os algoritmos funcionam internamente, o que é útil para fins educativos.

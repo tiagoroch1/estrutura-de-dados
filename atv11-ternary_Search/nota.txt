@@ -1,0 +1,25 @@
+# Ternary Search
+
+## Descrição do Algoritmo:
+O Ternary Search é uma técnica de busca que funciona em listas ordenadas. Ele divide a lista em três partes iguais, verificando dois pontos médios (`mid1` e `mid2`) em vez de um, como no Binary Search. Após a verificação, reduz a área de busca para uma das três partes.
+
+## Passos:
+1. Calcular dois pontos médios: `mid1` e `mid2`.
+2. Verificar se o elemento procurado está em `mid1` ou `mid2`.
+3. Reduzir a área de busca para uma das três partes:
+   - Se o elemento for menor que `mid1`, buscar na primeira parte.
+   - Se o elemento for maior que `mid2`, buscar na terceira parte.
+   - Caso contrário, buscar na parte entre `mid1` e `mid2`.
+
+## Comparação com Binary Search:
+O Binary Search divide a lista em duas partes, enquanto o Ternary Search a divide em três. Apesar disso, o Binary Search geralmente é mais rápido devido ao menor número de comparações.
+
+## Análise de Desempenho:
+- Melhor caso: \(O(\log_3 n)\) (mais eficiente para listas muito grandes).
+- Pior caso: \(O(\log_3 n)\).
+- Comparação com Binary Search: Em termos de complexidade de tempo, \(O(\log_3 n)\) é próximo a \(O(\log_2 n)\), mas o Binary Search é mais prático devido à menor quantidade de divisões.
+
+## Exemplo:
+Lista: [1, 5, 8, 12, 15, 19, 25, 30, 42, 50]  
+Elemento a ser buscado: 19  
+Saída esperada: Índice 5

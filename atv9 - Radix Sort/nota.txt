@@ -1,0 +1,27 @@
+Atividade 9 - Radix Sort
+
+Objetivo:
+O Radix Sort é um algoritmo de ordenação não comparativo que trabalha com os dígitos dos números. Ele realiza a ordenação começando pelo dígito menos significativo (unidade) e vai até o dígito mais significativo. 
+
+Como funciona:
+1. O algoritmo percorre cada dígito de cada número.
+2. Em cada iteração, ele realiza a ordenação dos números com base no dígito atual, utilizando um algoritmo estável como o Counting Sort.
+3. Isso é repetido para todos os dígitos dos números até que a lista esteja completamente ordenada.
+
+Como o Radix Sort lida com bases diferentes:
+- **Base 10 (decimal):** O Radix Sort usa dígitos de 0 a 9. Esse é o comportamento padrão, onde cada número é classificado de acordo com seus dígitos individuais.
+- **Base 2 (binário):** Se quisermos trabalhar com números binários (base 2), podemos adaptar o algoritmo para tratar dígitos 0 e 1.
+
+Testes:
+O Radix Sort foi testado com listas de números de 2, 5 e 10 dígitos. O desempenho do algoritmo foi eficiente, especialmente para números de 2 a 5 dígitos. Quando o número de dígitos aumenta, o tempo de execução cresce proporcionalmente.
+
+Tempo de Execução:
+- Teste 1 (2 dígitos): O algoritmo é rápido, pois o número de dígitos é pequeno.
+- Teste 2 (5 dígitos): O tempo de execução começa a crescer, mas o Radix Sort ainda é eficiente.
+- Teste 3 (10 dígitos): Para números com muitos dígitos, o algoritmo pode demorar mais, mas a eficiência permanece em comparação com outros algoritmos de ordenação.
+
+Conclusão:
+O Radix Sort é muito eficiente quando trabalhamos com números que têm uma quantidade significativa de dígitos. Ele é particularmente útil em listas grandes e quando precisamos de uma ordenação estável.
+
+Base 10 vs Base 2:
+Ao trabalhar com números binários, o Radix Sort pode ser adaptado para usar apenas os dígitos 0 e 1. A eficiência em base 2 dependerá de como o número de dígitos aumenta, já que a quantidade de números binários pode ser maior em termos de bits.

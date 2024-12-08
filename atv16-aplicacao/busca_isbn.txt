@@ -1,0 +1,6 @@
+### Resultados da Busca por ISBN
+
+Lista de ISBNs ordenada:
+978-0-545-01022-1, 978-0-7432-7356-5, 978-1-4028-9462-6, 978-1-86197-876-9, 978-3-16-148410-0
+
+O ISBN 978-0-545-01022-1 foi encontrado na posição 0 da lista.

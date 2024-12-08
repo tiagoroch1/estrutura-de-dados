@@ -1,0 +1,17 @@
+### Atividade 17 - Busca e Ordenação em Dados Reais
+
+#### Notas Originais:
+45, 82, 78, 92, 56, 35, 68, 89, 23, 41, 100, 50
+
+#### Notas Ordenadas:
+23, 35, 41, 45, 50, 56, 68, 78, 82, 89, 92, 100
+
+#### Nota Procurada:
+78
+
+#### Resultado da Busca:
+A nota 78 foi encontrada na posição 7.
+
+#### Tempo de Execução:
+- Tempo de Ordenação: 0.000xxx segundos
+- Tempo de Busca: 0.000xxx segundos
